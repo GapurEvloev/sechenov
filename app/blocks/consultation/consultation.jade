@@ -1,0 +1,20 @@
+mixin consultation()
+	section.s-consultation.section&attributes(attributes)
+		.container
+			.consultation
+				h2.consultation__title Запись на консультацию
+				.consultation__contacts
+					.contacts
+						span.contacts__icon
+						span.contacts__phone
+						span.contacts__mail
+				p.consultation__text
+				.consultation__form
+					form.form
+						p.form__title Когда Вам удобно поговорить?
+						span.form__input
+							input(type="checkbox").form__input-check.consultation__form-checkbox#gridCheck1
+							label(for="gridCheck1").form__input-label.consultation__form-checkbox-label Сейчас
+						input(type="tel" placeholder="Номер телефона").form__input-phone
+						input(type="tel" placeholder="Время").form__input-time
+						a(href="#").btn-clinic.form__btn Получить консультацию

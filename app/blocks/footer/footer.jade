@@ -1,0 +1,30 @@
+mixin footer()
+	footer.footer&attributes(attributes)
+		.container
+			a(href="#").logo
+				img(src="assets/images/logo.png").logo__img
+			.footer__address.address
+				span.address__blue-text Москва, ул. Большая Пироговская д.6, стр. 1
+				span.address__gray-text Здание Университетской клинической больницы №1, 1 этаж
+			.footer__rightcol
+				a(href="#").footer__login Личный кабинет
+				a(href="tel:+74951991685").footer__phone +7 (495) 199-16-85
+			nav.footer__nav.footer-nav
+				ul.footer__nav-list.footer-nav__list
+					li.footer-nav__item
+						a(href="#").footer-nav__link КЛИНИКА
+					li.footer-nav__item
+						a(href="#").footer-nav__link УСЛУГИ
+					li.footer-nav__item
+						a(href="#").footer-nav__link ДОКТОРА
+					li.footer-nav__item
+						a(href="#").footer-nav__link КОНТАКТЫ
+						.footer-nav__dropdown-wrapper
+							.footer-nav__dropdown
+								ul.footer-subnav
+									li.footer-subnav__item
+										a(href="#").footer-subnav__link Генетический паспорт здоровья
+									li.footer-subnav__item
+										a(href="#").header-subnav__link Check Up тест
+									li.footer-subnav__item
+										a(href="#").header-subnav__link Online-врач

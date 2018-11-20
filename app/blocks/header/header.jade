@@ -1,0 +1,27 @@
+mixin header()
+	header.header&attributes(attributes)
+		.container
+			a(href="#").logo
+				img(src="assets/images/logo.png").logo__img
+			nav.header__nav.header-nav
+				ul.header__nav-list.header-nav__list
+					li.header-nav__item
+						a(href="#").header-nav__link КЛИНИКА
+					li.header-nav__item
+						a(href="#").header-nav__link УСЛУГИ
+						.header-nav__dropdown-wrapper
+							.header-nav__dropdown
+								ul.header-subnav
+									li.header-subnav__item
+										a(href="#").header-subnav__link Генетический паспорт здоровья
+									li.header-subnav__item
+										a(href="#").header-subnav__link Check Up тест
+									li.header-subnav__item
+										a(href="#").header-subnav__link Online-врач
+					li.header-nav__item
+						a(href="#").header-nav__link ДОКТОРА
+					li.header-nav__item
+						a(href="#").header-nav__link КОНТАКТЫ
+			.header__rightcol
+				a(href="tel:+74951991685").header__phone +7 (495) 199-16-85
+				a(href="#").header__login Личный кабинет

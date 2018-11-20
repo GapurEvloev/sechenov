@@ -1,0 +1,21 @@
+extends /blocks/layout-default/layout-default
+include ../blocks/header/header
+include ../blocks/slider/slider
+include ../blocks/services/services
+include ../blocks/about/about
+include ../blocks/consultation/consultation
+include ../blocks/doctors/doctors
+include ../blocks/footer/footer
+
+block head
+	- var pageTitle = 'SechenovNew';
+
+block content
+	+header()
+	+slider()
+	+services()
+	+about()
+	+consultation()
+	+doctors()
+	+footer()
+
