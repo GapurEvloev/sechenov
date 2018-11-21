@@ -1,21 +1,103 @@
 .header
-	padding: 40px 0
+	padding 40px 0
 	.container
 		display flex
-		justify-content: space-between
+		justify-content space-between
 	&__nav
-		align-self: flex-end
-		margin-bottom: 7px
+		align-self flex-end
+		margin-bottom 7px
 		&-list
-			display: flex
-			flex-wrap: nowrap
-
-		&__item
-			position: relative
-		&__dropdown-wrapper
-			posa
+			display flex
+			flex-wrap nowrap
 	&__rightcol
-		display: flex
-		flex-direction: column
-		align-items: flex-end;
-		justify-content: space-around
+		display flex
+		flex-direction column
+		align-items flex-end
+		justify-content space-between
+		a
+			text-decoration none
+	&__phone
+		color endeavour
+		font-size 19px
+		font-weight bold
+	&__login
+		font-size base-font
+		color robinEggBlue
+		text-transform: uppercase
+		margin-bottom 7px
+		position relative
+		letter-spacing 3px
+		&:before
+			content ''
+			width 25px
+			height 20px
+			position absolute
+			background-image: url(../images/login-icon.png)
+			left -35px
+	&-nav
+		&__item
+			position relative
+			padding 0 21px
+			&.dropdown-item
+				&.active
+					transition 100ms all linear
+					&:after
+						transform rotate(-45deg)
+						top 6px
+						border-top 2px solid limeade
+						border-right 2px solid limeade
+					.header-nav__link
+						color limeade
+						border-bottom-color limeade
+				&:hover
+					&:after
+						border-top 2px solid limeade
+						border-right 2px solid limeade
+					.header-nav__link
+						color limeade
+						border-bottom-color limeade
+				&:after
+					width 4px
+					height 4px
+					content ''
+					position absolute
+					top 3px
+					right 13px
+					border 0
+					border-top 2px solid regentGray
+					border-right 2px solid regentGray
+					transform rotate(135deg)
+					transition 300ms all linear
+		&__link
+			padding 7px 0
+			text-decoration none
+			border-bottom 2px solid transparent
+			letter-spacing 3px
+			text-transform: uppercase
+			&:hover
+				color limeade
+				border-bottom-color limeade
+			color regentGray
+			transition 200ms all linear
+		&__dropdown-wrapper
+			position absolute
+			display none
+			width 350px
+			border 1px solid regentGray
+			background-color bgc
+			margin-top: 8px
+			border-radius 20px
+			left 50%
+			transform translateX(-50%)
+			padding 30px
+	&-subnav
+		&__link
+			letter-spacing 1px
+			color	limeade
+			text-decoration none
+			padding 3px 0
+			border-bottom 1px solid transparent
+			&:hover
+				border-bottom-color limeade
+		&__item	
+			padding 5px 0
