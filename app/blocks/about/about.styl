@@ -1,2 +1,63 @@
 .about
 	display block
+.slide-two
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	margin-top 106px
+	margin-bottom 95px
+.slide-two-col
+	flex-basis 50%
+.column
+	position: relative
+	&:after
+		content ''
+		border-right: 1px solid botticelli
+		height 100%
+		position: absolute
+		right 0
+		top 0
+	&:last-child
+		&:after
+			border: none
+	&__title
+		color endeavour
+		font-size 44px
+		font-weight bold
+		line-height 55px
+		margin-bottom 30px
+	&__descr
+		font-size 28px
+		font-weight 300
+		color endeavour
+		line-height 35px
+		padding-right 60px
+		
+//итемы колонок слайда		
+.column
+	&__item
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		align-items center
+		margin-bottom 50px
+		&-img-wrap
+			width 100px
+			height 90px
+			margin: 0 45px 0 60px
+		&-img
+			width auto
+			height 100%	
+		&-descr
+			font-size 21px
+			font-weight 300
+			color raven
+
+
+
+
+

@@ -1,25 +1,45 @@
 .s-slider
+	margin-bottom 100px
+	padding-bottom 10px
 	.s-container
 		max-width 1270px
-		margin: 0 auto
+		margin 0 auto
+		position: relative
 .slider
 	display block
-	position: relative
+	position relative
 	&__navigation
-		position: absolute
+		position absolute
 		width 50px
 		height 50px
-		background-color: transparent
-		background-image: url(../images/next.svg)
+		background-color transparent
+		background-image url(../images/next.svg)
 		top 50%
 		transform translateY(-50%)
-		right -50px
-		cursor: pointer
+		right -60px
+		cursor pointer
 		&--prev
-			transform: translateY(-50%)rotate(180deg)
-			left -50px
-			
-
+			transform translateY(-50%)rotate(180deg)
+			left -60px
+	&__dots
+		position absolute
+		bottom -70px
+		width 100%
+		.slick-dots
+			text-align: center
+			padding-left 35px
+		li
+			display: inline-block
+			height 14px
+			width 14px
+			border 2px solid regentGray
+			border-radius 50%
+			margin-left 7px
+			&:first-child
+				margin-left 0
+			&.slick-active
+				background-color limeade
+				border: none
 .slide
 	&__content
 		display -webkit-flex
@@ -27,17 +47,37 @@
 		display -ms-flex
 		display -o-flex
 		display flex
-		overflow: hidden
+		overflow hidden
 	&__body	
+		position relative
 		color endeavour
 		font-size 24px
+		padding-left 35px
+		display flex
+		flex-direction column
+		justify-content flex-start
+		.btn-clinic--slider
+			position absolute
+			bottom 0
+			font-size 21px
 	&__title	
+		margin 70px 40px 38px 0
+		
 		font-size 87px
 		font-weight bold
+		line-height 80px
+	&__descr
+		font-size 24px
+		font-weight 300
+	
+		
+
+
+
 	/* Slider */
 .slick-slider
 {
-    position: relative;
+    position relative;
 
     display: block;
     box-sizing: border-box;

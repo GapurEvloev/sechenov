@@ -7,7 +7,7 @@ $(() => {
 });
 $(document).ready(function () {
 	$(".dropdown-item").hover(function () {
-		$(this).children(".header-nav__dropdown-wrapper").stop().delay(200).animate({height: "toggle", opacity: "toggle"}, 200);
+		$(this).children(".header-nav__dropdown-wrapper").stop().delay(60).animate({height: "toggle", opacity: "toggle"}, 60);
 		$(this).toggleClass("active").animate(100);
 	});
 

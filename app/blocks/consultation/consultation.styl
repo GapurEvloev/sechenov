@@ -1,2 +1,118 @@
-.consultation
+.s-consultation
 	display block
+	position: relative
+	background-color: bgcgray
+	&:before
+		height 100%
+		width 1200px
+		content ''
+		position: absolute
+		margin 0 auto
+		right 50%
+		left 50%
+		background-image: url(../images/consultationbg.png)
+		background-repeat: no-repeat
+		background-position: 10px center
+.consultation
+	padding 53px 0 63px 0
+	width 50%
+	&__title
+		font-size 67px
+		font-weight bold
+		color endeavour
+		margin-bottom 18px
+	&__text
+		font-size 21px
+		color raven
+		font-weight 300
+		line-height 28px
+		margin-bottom 49px
+.contacts
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	align-items center
+	margin-bottom 25px
+	a
+		text-decoration none
+		font-size 19px
+		font-weight 500
+		color limeade
+	&__phone
+			&:after
+				position: absolute
+				top -1px
+				right 0
+				content '|'
+			position: relative
+			margin-right 10px
+			padding-right 12px
+	&__icon
+		display: inline-block
+		width 50px
+		height 50px
+		background-image: url(../images/contacts__icon.png)
+		background-size: contain
+		background-repeat: no-repeat
+		margin-right 22px
+		
+.form
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	flex-wrap wrap
+	&__title
+		font-size 21px
+		font-weight 700
+		color endeavour
+		margin-bottom: 45px
+	&__input
+		margin-left: auto
+		position: relative
+		&-label
+			color raven	
+			font-weight 300
+			padding-left 5px
+			&:before
+				content ''
+				position: absolute
+				width 18px
+				height 18px
+				background-color: robinEggBlue
+				border-radius 5px
+				left 0
+				top 0
+		&-phone
+		&-time
+			height 48px
+			padding 5px 10px
+			margin-bottom 55px
+		&-phone
+			margin-right 32px	
+	input
+		flex-basis calc(50% - 16px)
+		border: none
+		border-radius 5px
+		&::placeholder
+			opacity: .5
+	input[type=checkbox]
+		&:checked + label
+			&:before
+				background-image: url(../images/check.png)
+				background-position: center
+				background-repeat: no-repeat
+
+
+
+
+
+
+
+
+
+
+

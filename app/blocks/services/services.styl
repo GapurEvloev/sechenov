@@ -1,2 +1,56 @@
-.services
+.s-services
 	display block
+	background-color bgcgray
+	.services
+		display: block
+		margin-top 25px
+		margin-bottom 50px
+.slide
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	justify-content space-between
+	.slide-item
+		flex-basis calc(100%/3)	
+		text-align center
+		display flex
+		flex-wrap wrap
+		justify-content space-around
+		align-items flex-end
+		position: relative
+		&:after
+			content ''
+			right 0
+			position: absolute
+			height 92%
+			border: none
+			border-right: 1px solid botticelli
+		&:last-child
+			&:after
+				display: none
+		&__img
+			position: relative
+			height 100%
+			width auto
+			&-wrap
+				margin-bottom 8px
+				height 200px
+				position: relative
+				align-self flex-start
+		&__title
+			font-size 40px
+			font-weight bold
+			color endeavour
+			margin-bottom 29px
+			width 100%
+		&__descr
+			font-size 19px
+			font-weight 300
+			color raven
+			margin-bottom 53px
+			padding: 0 40px
+			width 100%
+		&__btn
+			flex-basis auto

@@ -2,13 +2,13 @@ mixin consultation()
 	section.s-consultation.section&attributes(attributes)
 		.container
 			.consultation
-				h2.consultation__title Запись на консультацию
+				h2.consultation__title Запись на&nbsp;консультацию
 				.consultation__contacts
 					.contacts
 						span.contacts__icon
-						span.contacts__phone
-						span.contacts__mail
-				p.consultation__text
+						a(href="tel:+74951991685").contacts__phone +7 (495) 199-16-85
+						a(href="mailto:hmc.sechenov@gmail.com").contacts__mail hmc.sechenov@gmail.com
+				p.consultation__text Мы понимаем, что не&nbsp;всегда удобно разговаривать прямо&nbsp;сейчас. Просто оставьте заявку и&nbsp;мы перезвоним в&nbsp;комфортное для&nbsp;вас время, чтобы проконсультировать. 
 				.consultation__form
 					form.form
 						p.form__title Когда Вам удобно поговорить?
@@ -16,5 +16,5 @@ mixin consultation()
 							input(type="checkbox").form__input-check.consultation__form-checkbox#gridCheck1
 							label(for="gridCheck1").form__input-label.consultation__form-checkbox-label Сейчас
 						input(type="tel" placeholder="Номер телефона").form__input-phone
-						input(type="tel" placeholder="Время").form__input-time
-						a(href="#").btn-clinic.form__btn Получить консультацию
+						input(type="text" placeholder="Время").form__input-time
+						a(href="#").btn-clinic.btn-clinic--form.form__btn Получить консультацию
